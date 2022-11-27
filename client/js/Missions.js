@@ -10,5 +10,5 @@ const missions = {
 const teamDetails = {
     "1": {teamMission: missions[1], art: "👨‍🚀", abilities: "Invisibility", desc: "Human Covert Unit"},
     "2": {teamMission: missions[2], art: "👽", abilities: "Capture", desc: "Alien Sentry Unit"},
-    "0": {teamMission: missions[3], art: "👽", abilities: "Invisibility; Blink", desc: "Alien Dragoon Unit"}
+    "0": {teamMission: missions[3], art: "👽", abilities: "Invisibility; Blink; EMP Bomb", desc: "Alien Dragoon Unit"}
 };

@@ -86,24 +86,25 @@ class GridSystem {
             3: {powerName: "stun", title: "EMP Bomb"},
         }
         this.mapDefaultPowers = {
-            "area1": [this.powerList[3], this.powerList[3],this.powerList[3],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2]],
-            "area2": [this.powerList[2], this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[1],],
-            "area3": [this.powerList[2], this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2], this.powerList[1]],
+            "area1": [this.powerList[3], this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[1]],
+            // "area2": [this.powerList[2], this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[1],],
+            // "area3": [this.powerList[2], this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2],this.powerList[2], this.powerList[1]],
         }
 
         this.startArea = "area1";
         this.defaultStartingPoints = {
-            "area1": {"p1": {x:21,y:5}, "p2": {x:15,y:5}, "p3": {x:14,y:5}, "p4": {x:10,y:1}, "p5": {x:9,y:1}, "p6": {x:8,y:1}, "p7": {x:7,y:5}, "p8": {x:7,y:1}, "p9": {x:1,y:2}, "p10": {x:1,y:3}, "p11": {x:1,y:4},},
-            "area2": {"p1": {x:31,y:19}, "p2": {x:16,y:1}, "p3": {x:15,y:1}, "p4": {x:14,y:1}, "p5": {x:5,y:1}, "p6": {x:4,y:1}, "p7": {x:3,y:1}, "p8": {x:1,y:4}, "p9": {x:1,y:3}, "p10": {x:1,y:2}, "p11": {x:1,y:1},},
-            "area3": {"p1": {x:32,y:19}, "p2": {x:8,y:6}, "p3": {x:7,y:6}, "p4": {x:6,y:6}, "p5": {x:5,y:6}, "p6": {x:4,y:6}, "p7": {x:3,y:6}, "p8": {x:2,y:6}, "p9": {x:1,y:3}, "p10": {x:1,y:4}, "p11": {x:1,y:5},},
-            "area4": {"p1": {x:32,y:1}, "p2": {x:1,y:5}, "p3": {x:1,y:15}, "p4": {x:1,y:16}, "p5": {x:1,y:4}, "p6": {x:1,y:3}, "p7": {x:1,y:2}, "p8": {x:1,y:1}, "p9": {x:1,y:17}, "p10": {x:1,y:18}, "p11": {x:1,y:19},},
-            "area5": {"p1": {x:32,y:1}, "p2": {x:4,y:19}, "p3": {x:4,y:9}, "p4": {x:4,y:11}, "p5": {x:4,y:12}, "p6": {x:4,y:13}, "p7": {x:4,y:14}, "p8": {x:4,y:1}, "p9": {x:4,y:2}, "p10": {x:4,y:3}, "p11": {x:4,y:4},},
+            "area1": {"p1": {x:7,y:10}, "p2": {x:2,y:4}, "p3": {x:5,y:4}, "p4": {x:8,y:4}, "p5": {x:11,y:4}, "p6": {x:17,y:4}, "p7": {x:20,y:4}, "p8": {x:23,y:4}, "p9": {x:25,y:4}, "p10": {x:28,y:4}, "p11": {x:30,y:4},},
+            // "area2": {"p1": {x:31,y:19}, "p2": {x:16,y:1}, "p3": {x:15,y:1}, "p4": {x:14,y:1}, "p5": {x:5,y:1}, "p6": {x:4,y:1}, "p7": {x:3,y:1}, "p8": {x:1,y:4}, "p9": {x:1,y:3}, "p10": {x:1,y:2}, "p11": {x:1,y:1},},
+            // "area3": {"p1": {x:32,y:19}, "p2": {x:8,y:6}, "p3": {x:7,y:6}, "p4": {x:6,y:6}, "p5": {x:5,y:6}, "p6": {x:4,y:6}, "p7": {x:3,y:6}, "p8": {x:2,y:6}, "p9": {x:1,y:3}, "p10": {x:1,y:4}, "p11": {x:1,y:5},},
+            // "area4": {"p1": {x:32,y:1}, "p2": {x:1,y:5}, "p3": {x:1,y:15}, "p4": {x:1,y:16}, "p5": {x:1,y:4}, "p6": {x:1,y:3}, "p7": {x:1,y:2}, "p8": {x:1,y:1}, "p9": {x:1,y:17}, "p10": {x:1,y:18}, "p11": {x:1,y:19},},
+            // "area5": {"p1": {x:32,y:1}, "p2": {x:4,y:19}, "p3": {x:4,y:9}, "p4": {x:4,y:11}, "p5": {x:4,y:12}, "p6": {x:4,y:13}, "p7": {x:4,y:14}, "p8": {x:4,y:1}, "p9": {x:4,y:2}, "p10": {x:4,y:3}, "p11": {x:4,y:4},},
         };
 
         //this.extraArr = ["TCR", "LOK", "LK", "JHA", "JV", "CJH", "SZF", "JHA", "TJY", "KX"];
         //this.extraArr = ["TCR", "JX", "JZ", "TWN", "LJY", "ELI", "CUR", "RYD", "CT", "LK", "JV"];
         //this.extraArr = ["TCR", "CUR", "CT", "ELI", "JZ", "LJY", "TWN", "RYD", "JX", "LK", "JV"];
-        this.extraArr = ["TCR", "LOK", "JHA", "KN", "JT", "CJH", "CED", "KX", "TJY", "LSH", "SZF"];
+        // this.extraArr = ["TCR", "LOK", "JHA", "KN", "JT", "CJH", "CED", "KX", "TJY", "LSH", "SZF"];
+        this.extraArr = ["TCR", "LOK", "JHA", "KN", "JT", "CJH", "CED", "KX", "TJY", "RYD", "SZF"];
 
         //this.p1 = { x: 1, y: 1, lable: 2, id: this.extraArr[0], steps: this.startingSteps, area: "mainArea", wallet: 0, total: 0, storeSteps: 1000 };
         // this.playersArr = [this.p1, this.p2, this.p3, this.p4, this.p5, this.p6, this.p7, this.p8, this.p9, this.p10];
@@ -126,16 +127,16 @@ class GridSystem {
             this.item1 = new Item({itemLable: 1, itemId: "", color: "#4488FF", returnValue: false}),
             
             this.item2 = new Item({itemLable: 20, itemId: "🌀", returnValue: false}),
-            // this.item3 = new Item({itemLable: 21, itemId: "🌱"}),
-            // this.item4 = new Item({itemLable: 22, itemId: "🔩"}),
-            // this.item5 = new Item({itemLable: 23, itemId: "🔧"}),
-            // this.item6 = new Item({itemLable: 24, itemId: "🧬"}),
-            // this.item7 = new Item({itemLable: 25, itemId: "🧪"}),
-            // this.item8 = new Item({itemLable: 26, itemId: "🔋"}),
-            // this.item9 = new Item({itemLable: 27, itemId: "🌻"}),
-            // this.item10 = new Item({itemLable: 28, itemId: "📀"}),
-            // this.item11 = new Item({itemLable: 29, itemId: "⚙"}),
-            // this.item12 = new Item({itemLable: 30, itemId: "🔒", returnValue: false}),
+            this.item3 = new Item({itemLable: 21, itemId: "🌱"}),
+            this.item4 = new Item({itemLable: 22, itemId: "🔩"}),
+            this.item5 = new Item({itemLable: 23, itemId: "🔧"}),
+            this.item6 = new Item({itemLable: 24, itemId: "🧬"}),
+            this.item7 = new Item({itemLable: 25, itemId: "🧪"}),
+            this.item8 = new Item({itemLable: 26, itemId: "🔋"}),
+            this.item9 = new Item({itemLable: 27, itemId: "🌻"}),
+            this.item10 = new Item({itemLable: 28, itemId: "📀"}),
+            this.item11 = new Item({itemLable: 29, itemId: "⚙"}),
+            this.item12 = new Item({itemLable: 30, itemId: "🔒", returnValue: false}),
             this.item13 = new Item({itemLable: 2, itemId: "", color: "transparent", returnValue: false}),
         ];
 
@@ -449,6 +450,7 @@ class GridSystem {
             this.teamSlots1 = [];
             this.teamSlots2 = [];
             player.steps = 0;
+            this.setStartingPowersMultiLevel(player);
          });
          this.emitToUsers('sendMatrix');
     }
