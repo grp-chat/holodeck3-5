@@ -21,6 +21,7 @@ console.log("Server listening at " + PORT);
 //------------------------------------------------------------------------------------------------------
 const { Player } = require('./player');
 const { Item } = require('./item');
+const { TeamObjects } = require('./TeamObjects');
 const { AllMatrixes } = require('./maps');
 const { Console } = require('console');
 //------------------------------------------------------------------------------------------------------
@@ -61,6 +62,8 @@ class GridSystem {
             38: {x: 0, y: -2},
             40: {x: 0, y: 2}
         }
+
+        this.teamObjects = new TeamObjects;
         
         this.teamSlots1 = [];
         this.teamSlots2 = [];
@@ -429,9 +432,6 @@ class GridSystem {
             if (index2 !== -1) {this.teamSlots2.splice(index2, 1)};
             this.translocator2(plyrSlot, 0)
         }
-
-        // console.log(this.teamSlots1);
-        // console.log(this.teamSlots2);
         
     }
 
